@@ -1,0 +1,78 @@
+
+<html>
+<head>
+    <title>Log Anomaly Detection Report</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Log Anomaly Detection Report</h1>
+
+<h2>LSTM Results</h2>
+<table>
+<tr><th>Class</th><th>Precision</th><th>Recall</th><th>F1</th></tr>
+
+        <tr>
+            <td>0</td>
+            <td>0.97</td>
+            <td>1.00</td>
+            <td>0.98</td>
+        </tr>
+        
+        <tr>
+            <td>1</td>
+            <td>0.84</td>
+            <td>0.24</td>
+            <td>0.37</td>
+        </tr>
+        
+</table>
+
+<p><b>Confusion Matrix:</b> [[5049, 9], [154, 48]]</p>
+
+<h2>BiLSTM Results</h2>
+<table>
+<tr><th>Class</th><th>Precision</th><th>Recall</th><th>F1</th></tr>
+
+        <tr>
+            <td>0</td>
+            <td>0.97</td>
+            <td>1.00</td>
+            <td>0.98</td>
+        </tr>
+        
+        <tr>
+            <td>1</td>
+            <td>0.89</td>
+            <td>0.25</td>
+            <td>0.39</td>
+        </tr>
+        
+</table>
+
+<p><b>Confusion Matrix:</b> [[5052, 6], [152, 50]]</p>
+
+</body>
+</html>
