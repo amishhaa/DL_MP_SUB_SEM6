@@ -69,3 +69,16 @@ for blk, seq in sequences.items():
 print("samples:", len(X))
 print("sequence length:", len(X[0]))
 print("labels:", set(y))
+
+import numpy as np
+
+X = np.array(X)
+y = np.array(y)
+
+print("X shape:", X.shape)
+print("y shape:", y.shape)
+
+np.save("../dataset/X.npy", X)
+np.save("../dataset/y.npy", y)
+
+print("Saved X and y")
